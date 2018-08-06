@@ -1,0 +1,12 @@
+//Groovy Scripts for com.usaparel.qmdm.model.VO.VOQmdmKhan
+
+package com.usaparel.qmdm.model.VO
+
+import oracle.jbo.script.annotation.TransientValueExpression;
+
+@TransientValueExpression(attributeName="given")
+def given_ExpressionScript_Expression()
+{
+VOQmdmKhan1.sum('IsPaid')
+}
+

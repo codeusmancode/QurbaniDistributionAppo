@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="VOStatUnitWise"
+  Version="12.2.1.12.24"
+  InheritPersonalization="merge"
+  BindingStyle="OracleName"
+  CustomQuery="true"
+  PageIterMode="Full">
+  <DesignTime>
+    <Attr Name="_isExpertMode" Value="true"/>
+  </DesignTime>
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="com.usaparel.qmdm.model.VO.VOStatUnitWise_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <SQLQuery><![CDATA[SELECT * FROM (     
+select EMPLOYEE_UNIT,IS_PAID from qmdm_khan)     
+pivot(      
+SUM(IS_PAID) for employee_unit in ('1','2','3','4','5','6','7','8','10')     
+)]]></SQLQuery>
+  <ViewAttribute
+    Name="J1"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="&quot;'1'&quot;"
+    Expression="&quot;'1'&quot;"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="J2"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="&quot;'2'&quot;"
+    Expression="&quot;'2'&quot;"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="J3"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="&quot;'3'&quot;"
+    Expression="&quot;'3'&quot;"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="J4"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="&quot;'4'&quot;"
+    Expression="&quot;'4'&quot;"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="J5"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="&quot;'5'&quot;"
+    Expression="&quot;'5'&quot;"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="J6"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="&quot;'6'&quot;"
+    Expression="&quot;'6'&quot;"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="J7"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="&quot;'7'&quot;"
+    Expression="&quot;'7'&quot;"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="J8"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="&quot;'8'&quot;"
+    Expression="&quot;'8'&quot;"
+    SQLType="NUMERIC"/>
+  <ViewAttribute
+    Name="J10"
+    IsUpdateable="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="&quot;'10'&quot;"
+    Expression="&quot;'10'&quot;"
+    SQLType="NUMERIC"/>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="com.usaparel.qmdm.model.ModelBundle"/>
+  </ResourceBundle>
+</ViewObject>

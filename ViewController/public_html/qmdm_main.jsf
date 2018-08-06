@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+        xmlns:dvt="http://xmlns.oracle.com/dss/adf/faces" xmlns:h="http://java.sun.com/jsf/html"
+         beforePhase="#{PhaseListener.beforePhase}">
+    <af:document title="qmdm_main.jsf" id="d1">
+        <af:messages id="m1"/>
+        <af:form id="f1">
+            <af:panelStretchLayout id="psl1" dimensionsFrom="parent"
+                                   startWidth="150px" endWidth="150px" topHeight="0px" bottomHeight="0px"
+                                   inlineStyle="background-color:white;">
+                <f:facet name="start">
+                    <af:panelGroupLayout id="pgl8"/>
+                </f:facet>
+                <f:facet name="end">
+                    <af:panelGroupLayout id="pgl9"/>
+                </f:facet>
+                <f:facet name="top"/>
+                <f:facet name="bottom"/>
+                <f:facet name="center">
+                    <af:panelSplitter id="ps1" splitterPosition="290" orientation="vertical"
+                                      inlineStyle="background-color:#BCD2EE	;" rendered="true" dimensionsFrom="parent">
+                        <f:facet name="first">
+                            <af:panelGroupLayout id="pgl4" layout="vertical">
+                                <af:panelGridLayout id="pgl6">
+                                    <af:gridRow marginTop="5px" height="auto" id="gr1">
+                                        <af:gridCell marginStart="5px" width="12%" id="gc1" valign="bottom"
+                                                     halign="center">
+                                            <af:panelGroupLayout id="pgl2" layout="vertical">
+                                                <af:image source="/images/cow.png" id="i3" inlineStyle="height:66px;"/>
+                                                <af:spacer width="90" height="1" id="s1"
+                                                           inlineStyle="background-color:black"/>
+                                            </af:panelGroupLayout>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" width="12%" id="gc2" valign="bottom"
+                                                     halign="center">
+                                            <af:panelGroupLayout id="pgl3" layout="vertical">
+                                                <af:image source="/images/goat.png" id="i4" inlineStyle="height:60px"/>
+                                                <af:spacer width="90" height="1" id="s2"
+                                                           inlineStyle="background-color:black"/>
+                                            </af:panelGroupLayout>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" width="12%" id="gc3" valign="bottom"
+                                                     halign="center">
+                                            <af:panelGroupLayout id="pgl7" layout="vertical">
+                                                <af:image source="/images/camel.png" id="i5" inlineStyle="height:60px"/>
+                                                <af:spacer width="100" height="1" id="s3"
+                                                           inlineStyle="background-color:black"/>
+                                            </af:panelGroupLayout>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" width="30%" id="gc4" halign="center">
+                                            <af:panelGroupLayout id="pgl13" halign="center" layout="vertical">
+                                                <af:image source="/images/eid_mubarak.PNG" id="i6"
+                                                          inlineStyle="width:200px"/>
+                                                <af:outputText value="نبی پاک ﷺ نے ایک حدیث  میں دو باتیں ارشاد فرمائں-" id="ot25"
+                                                               inlineStyle="font-weight:bold"/>
+                                                <af:outputText value="قربانی خوش دلی سے کرو" id="ot26"
+                                                               inlineStyle="font-weight:bold"/>
+                                                <af:outputText value="ثواب کی امید رکھو" id="ot24"
+                                                               inlineStyle="font-weight:bold"/>
+                                            </af:panelGroupLayout>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" width="11%" id="gc5" valign="bottom"
+                                                     halign="center">
+                                            <af:panelGroupLayout id="pgl10" layout="vertical" halign="center">
+                                                <af:outputText value="COUPON GENERATED" id="ot10"
+                                                               inlineStyle="font-weight:bold;width:80PX;display:inline-block;word-wrap:break-word "/>
+                                                <af:spacer width="10" height="2" id="s5"/>
+                                                <af:spacer width="90" height="1" id="s4"
+                                                           inlineStyle="background-color:black"/>
+                                            </af:panelGroupLayout>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" width="11%" id="gc6" halign="center"
+                                                     valign="bottom">
+                                            <af:panelGroupLayout id="pgl11" layout="vertical" halign="center">
+                                                <af:outputText value="COUPONS REDEEMED" id="ot15"
+                                                               inlineStyle="font-weight:bold;width:70PX;display:inline-block;word-wrap:break-word "/>
+                                                <af:spacer width="10" height="2" id="s6"/>
+                                                <af:spacer width="90" height="1" id="s7"
+                                                           inlineStyle="background-color:black"/>
+                                            </af:panelGroupLayout>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" width="11%" marginEnd="5px" id="gc7"
+                                                     halign="center" valign="bottom">
+                                            <af:panelGroupLayout id="pgl12" layout="vertical" halign="center">
+                                                <af:outputText id="ot11"
+                                                               inlineStyle="font-weight:bold;width:70PX;display:inline-block;word-wrap:break-word "
+                                                               value="REMAINING COUPONS"/>
+                                                <af:spacer width="10" height="2" id="s8"/>
+                                                <af:spacer width="90" height="1" id="s9"
+                                                           inlineStyle="background-color:black"/>
+                                            </af:panelGroupLayout>
+                                        </af:gridCell>
+                                    </af:gridRow>
+                                    <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr2">
+                                        <af:gridCell marginStart="5px" width="12%" id="gc8" halign="center">
+                                            <af:outputText value="2" id="ot13"
+                                                           inlineStyle="color:black; font-size:x-large; font-weight:bold;"/>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" width="12%" id="gc9" halign="center">
+                                            <af:outputText value="2" id="ot135"
+                                                           inlineStyle="color:black; font-size:x-large; font-weight:bold;"/>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" width="12%" id="gc10" halign="center">
+                                            <af:outputText value="2" id="ot133"
+                                                           inlineStyle="color:black; font-size:x-large; font-weight:bold;"/>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" width="30%" id="gc11"/>
+                                        <af:gridCell marginStart="5px" width="11%" id="gc12" halign="center">
+                                            <af:outputText value="#{bindings.Total.inputValue}" id="ot19"
+                                                           inlineStyle="color:black; font-size:x-large; font-weight:bold;"/>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" width="11%" id="gc13" halign="center">
+                                            <af:outputText value="#{bindings.Given.inputValue}" id="ot20"
+                                                           inlineStyle="color:black; font-size:x-large; font-weight:bold;"/>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" width="11%" marginEnd="5px" id="gc14"
+                                                     halign="center">
+                                            <af:outputText value="#{bindings.Selectobjects2.inputValue}" id="ot21"
+                                                           inlineStyle="color:black; font-size:x-large; font-weight:bold;"/>
+                                        </af:gridCell>
+                                    </af:gridRow>
+                                </af:panelGridLayout>
+                                <af:panelHeader text="Unit Wise Distribution" id="ph1">
+                                    <f:facet name="context"/>
+                                    <f:facet name="toolbar"/>
+                                    <f:facet name="menuBar"/>
+                                    <f:facet name="legend"/>
+                                    <f:facet name="info"/>
+                                    <af:table value="#{bindings.VOStatUnitWise1.collectionModel}" var="row"
+                                              rows="#{bindings.VOStatUnitWise1.rangeSize}"
+                                              emptyText="#{bindings.VOStatUnitWise1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                                              rowBandingInterval="0" fetchSize="#{bindings.VOStatUnitWise1.rangeSize}"
+                                              id="t1">
+                                        <af:column headerText="Head Office" id="c1" align="center" rendered="false">
+                                            <af:outputText value="#{row.J10}"
+                                                           shortDesc="#{bindings.VOStatUnitWise1.hints.J1.tooltip}"
+                                                           id="ot8">
+                                                <af:convertNumber groupingUsed="false"
+                                                                  pattern="#{bindings.VOStatUnitWise1.hints.J1.format}"/>
+                                            </af:outputText>
+                                        </af:column>
+                                        <af:column headerText="Unit 1" id="c2" align="center">
+                                            <af:outputText value="#{row.J1}"
+                                                           shortDesc="#{bindings.VOStatUnitWise1.hints.J1.tooltip}"
+                                                           id="ot83">
+                                                <af:convertNumber groupingUsed="false"
+                                                                  pattern="#{bindings.VOStatUnitWise1.hints.J1.format}"/>
+                                            </af:outputText>
+                                        </af:column>
+                                        <af:column headerText="Unit 2" id="c3" align="center">
+                                            <af:outputText value="#{row.J2}"
+                                                           shortDesc="#{bindings.VOStatUnitWise1.hints.J2.tooltip}"
+                                                           id="ot9">
+                                                <af:convertNumber groupingUsed="false"
+                                                                  pattern="#{bindings.VOStatUnitWise1.hints.J2.format}"/>
+                                            </af:outputText>
+                                        </af:column>
+                                        <af:column headerText="Unit 3" id="c4" align="center">
+                                            <af:outputText value="#{row.J3}"
+                                                           shortDesc="#{bindings.VOStatUnitWise1.hints.J3.tooltip}"
+                                                           id="ot12">
+                                                <af:convertNumber groupingUsed="false"
+                                                                  pattern="#{bindings.VOStatUnitWise1.hints.J3.format}"/>
+                                            </af:outputText>
+                                        </af:column>
+                                        <af:column headerText="Unit 4" id="c5" align="center">
+                                            <af:outputText value="#{row.J4}"
+                                                           shortDesc="#{bindings.VOStatUnitWise1.hints.J4.tooltip}"
+                                                           id="ot16">
+                                                <af:convertNumber groupingUsed="false"
+                                                                  pattern="#{bindings.VOStatUnitWise1.hints.J4.format}"/>
+                                            </af:outputText>
+                                        </af:column>
+                                        <af:column headerText="Unit 5" id="c6" align="center">
+                                            <af:outputText value="#{row.J5}"
+                                                           shortDesc="#{bindings.VOStatUnitWise1.hints.J5.tooltip}"
+                                                           id="ot17">
+                                                <af:convertNumber groupingUsed="false"
+                                                                  pattern="#{bindings.VOStatUnitWise1.hints.J5.format}"/>
+                                            </af:outputText>
+                                        </af:column>
+                                        <af:column id="c9" headerText="Unit 7" align="center">
+                                            <af:outputText value="#{row.J7}"
+                                                           shortDesc="#{bindings.VOStatUnitWise1.hints.J7.tooltip}"
+                                                           id="ot23">
+                                                <af:convertNumber groupingUsed="false"
+                                                                  pattern="#{bindings.VOStatUnitWise1.hints.J7.format}"/>
+                                            </af:outputText>
+                                        </af:column>
+                                        <af:column headerText="US Denim" id="c8" align="center">
+                                            <af:outputText value="#{row.J8}"
+                                                           shortDesc="#{bindings.VOStatUnitWise1.hints.Usd.tooltip}"
+                                                           id="ot22">
+                                                <af:convertNumber groupingUsed="false"
+                                                                  pattern="#{bindings.VOStatUnitWise1.hints.Usd.format}"/>
+                                            </af:outputText>
+                                        </af:column>
+                                        <af:column headerText="Others" id="c7" align="center">
+                                            <af:outputText value="#{row.J6}"
+                                                           shortDesc="#{bindings.VOStatUnitWise1.hints.J6.tooltip}"
+                                                           id="ot18">
+                                                <af:convertNumber groupingUsed="false"
+                                                                  pattern="#{bindings.VOStatUnitWise1.hints.J6.format}"/>
+                                            </af:outputText>
+                                        </af:column>
+                                    </af:table>
+                                </af:panelHeader>
+                            </af:panelGroupLayout>
+                        </f:facet>
+                        <f:facet name="second">
+                            <af:panelGroupLayout id="pgl1" layout="scroll">
+                                <af:panelGridLayout id="pgl5" rendered="true">
+                                    <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr3">
+                                        <af:gridCell marginStart="5px" width="20%" id="gc15">
+                                            <af:panelFormLayout id="pfl2" maxColumns="1" rows="4">
+                                                <af:inputText value="#{bindings.coupon.inputValue}" label="Coupon#"
+                                                              required="#{bindings.coupon.hints.mandatory}"
+                                                              columns="#{bindings.coupon.hints.displayWidth}"
+                                                              maximumLength="#{bindings.coupon.hints.precision}"
+                                                              shortDesc="#{bindings.coupon.hints.tooltip}" id="it1"
+                                                              binding="#{QmdmBean.ritCoupon}"
+                                                              valueChangeListener="#{QmdmBean.couponEntered}"
+                                                              autoSubmit="true">
+                                                    <f:validator binding="#{bindings.coupon.validator}"/>
+                                                    <af:convertNumber groupingUsed="false"
+                                                                      pattern="#{bindings.coupon.format}"/>
+                                                </af:inputText>
+                                                <af:selectBooleanCheckbox text="Bulk Distribution" id="sbr1"
+                                                                          autoSubmit="true"
+                                                                          valueChangeListener="#{QmdmBean.transactionTypeChanged}"
+                                                                          selected="false"/>
+                                                <af:inputText label="Location" id="it3"
+                                                              binding="#{QmdmBean.ritBulkLocation}" disabled="true"/>
+                                                <af:inputText label="Quantity" id="it2" columns="3"
+                                                              binding="#{QmdmBean.ritBulkQuantity}" disabled="true"/>
+                                                <af:button text="Distribute" id="b2" binding="#{QmdmBean.bdone}"
+                                                           disabled="true" action="#{QmdmBean.bulkTransaction}"/>
+                                                <af:button actionListener="#{bindings.ExecuteWithParams.execute}"
+                                                           text="ExecuteWithParams"
+                                                           disabled="#{!bindings.ExecuteWithParams.enabled}" id="b1"
+                                                           rendered="false"/>
+                                            </af:panelFormLayout>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" width="55%" id="gc16"
+                                                     rendered="true" halign="center" valign="middle">
+                                            <af:image id="i2"
+                                                      binding="#{QmdmBean.goshtImage}" source="/images/no_meat1.jpg"
+                                                      partialTriggers="it1"/>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" width="25%" marginEnd="5px" id="gc17" valign="middle">
+                                            <af:image id="i1"
+                                                      source="/showimageservlet?emp_code=#{bindings.EmployeeId.inputValue}"
+                                                      inlineStyle=" height:200px;width:140px; border:solid 3px #EDEDED	; border-radius:5px; "
+                                                      rendered="true"/>
+                                            <af:panelFormLayout id="pfl1" labelAlignment="start"
+                                                                rendered="true"
+                                                                partialTriggers="it1 gc15">
+                                                <af:outputText value="#{bindings.EmployeeName.inputValue} | #{bindings.EmployeeId.inputValue}" id="ot14"
+                                                               inlineStyle="font-weight:bold" rendered="true"/>
+                                                <af:outputText value="Employee Code:  #{bindings.EmployeeId.inputValue}"
+                                                               shortDesc="#{bindings.EmployeeId.hints.tooltip}" id="ot5"
+                                                               inlineStyle="font-size:large; font-weight:bold;"
+                                                               rendered="false">
+                                                    <af:convertNumber groupingUsed="false"
+                                                                      pattern="#{bindings.EmployeeId.format}"/>
+                                                </af:outputText>
+                                                <af:outputText value="Employee Name: #{bindings.EmployeeName.inputValue}"
+                                                               id="ot1"
+                                                               inlineStyle="font-size:large; font-weight:bold;"
+                                                               rendered="false"/>
+                                                <af:outputText value="Employee Designation: #{bindings.EmployeeDesignation.inputValue}"
+                                                               id="ot2"
+                                                               inlineStyle="font-size:large; font-weight:bold;"
+                                                               rendered="false"/>
+                                                <af:outputText value="Department: #{bindings.EmployeeDept.inputValue}"
+                                                               id="ot3"
+                                                               inlineStyle="font-size:large; font-weight:bold;"
+                                                               rendered="false"/>
+                                                <af:outputText value="#{bindings.EmployeeUnit.inputValue}" id="ot4"
+                                                               inlineStyle="font-size:large; font-weight:bold;"
+                                                               rendered="false"/>
+                                                <af:outputText value="#{bindings.IsPaid.inputValue}"
+                                                               shortDesc="#{bindings.IsPaid.hints.tooltip}" id="ot6"
+                                                               rendered="false">
+                                                    <af:convertNumber groupingUsed="false"
+                                                                      pattern="#{bindings.IsPaid.format}"/>
+                                                </af:outputText>
+                                            </af:panelFormLayout>
+                                        </af:gridCell>
+                                    </af:gridRow>
+                                </af:panelGridLayout>
+                            </af:panelGroupLayout>
+                        </f:facet>
+                    </af:panelSplitter>
+                </f:facet>
+            </af:panelStretchLayout>
+        </af:form>
+    </af:document>
+    <!--oracle-jdev-comment:preferred-managed-bean-name:QmdmBean-->
+</f:view>

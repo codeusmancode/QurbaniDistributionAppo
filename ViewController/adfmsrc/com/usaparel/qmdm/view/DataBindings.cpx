@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.12.24" id="DataBindings"
+             SeparateXMLFiles="false" Package="com.usaparel.qmdm.view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adfm/dvt"
+             className="oracle.adfinternal.view.faces.dvt.model.binding.FacesBindingFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/qmdm_main.jsf" usageId="com_usaparel_qmdm_view_qmdm_mainPageDef"/>
+    <page path="/untitled1.jsf" usageId="com_usaparel_qmdm_view_untitled1PageDef"/>
+    <page path="/untitled2.jsf" usageId="com_usaparel_qmdm_view_untitled2PageDef"/>
+    <page path="/stats.jsf" usageId="com_usaparel_qmdm_view_statsPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_usaparel_qmdm_view_qmdm_mainPageDef" path="com.usaparel.qmdm.view.pageDefs.qmdm_mainPageDef"/>
+    <page id="com_usaparel_qmdm_view_untitled1PageDef" path="com.usaparel.qmdm.view.pageDefs.untitled1PageDef"/>
+    <page id="com_usaparel_qmdm_view_untitled2PageDef" path="com.usaparel.qmdm.view.pageDefs.untitled2PageDef"/>
+    <page id="com_usaparel_qmdm_view_statsPageDef" path="com.usaparel.qmdm.view.pageDefs.statsPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="com.usaparel.qmdm.model.AM"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

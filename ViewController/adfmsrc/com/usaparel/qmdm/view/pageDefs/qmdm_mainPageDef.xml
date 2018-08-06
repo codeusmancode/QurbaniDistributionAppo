@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.12.24" id="qmdm_mainPageDef"
+                Package="com.usaparel.qmdm.view.pageDefs">
+  <parameters/>
+  <executables>
+    <iterator Binds="VOQmdmKhan1" RangeSize="25" DataControl="AppModuleDataControl" id="VOQmdmKhan1Iterator"/>
+    <iterator Binds="VOStat1" RangeSize="25" DataControl="AppModuleDataControl" id="VOStat1Iterator"/>
+    <variableIterator id="variables">
+      <variableUsage DataControl="AppModuleDataControl" Binds="VOQmdmKhan1.variablesMap.coupon"
+                     Name="ExecuteWithParams_coupon" IsQueriable="false"/>
+    </variableIterator>
+    <iterator Binds="VOStatUnitWise1" RangeSize="25" DataControl="AppModuleDataControl" id="VOStatUnitWise1Iterator"/>
+    <iterator Binds="VOUnitWiseTotalToken1" RangeSize="10" DataControl="AppModuleDataControl"
+              id="VOUnitWiseTotalToken1Iterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="VOQmdmKhan1Iterator" id="EmployeeName">
+      <AttrNames>
+        <Item Value="EmployeeName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOQmdmKhan1Iterator" id="EmployeeId">
+      <AttrNames>
+        <Item Value="EmployeeId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOQmdmKhan1Iterator" id="EmployeeDept">
+      <AttrNames>
+        <Item Value="EmployeeDept"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOQmdmKhan1Iterator" id="EmployeeDesignation">
+      <AttrNames>
+        <Item Value="EmployeeDesignation"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOQmdmKhan1Iterator" id="EmployeeUnit">
+      <AttrNames>
+        <Item Value="EmployeeUnit"/>
+      </AttrNames>
+    </attributeValues>
+    <action id="Commit" DataControl="AppModuleDataControl" RequiresUpdateModel="true" Action="commitTransaction"/>
+    <attributeValues IterBinding="VOStat1Iterator" id="Total">
+      <AttrNames>
+        <Item Value="Total"/>
+      </AttrNames>
+    </attributeValues>
+    <action IterBinding="VOQmdmKhan1Iterator" id="ExecuteWithParams" RequiresUpdateModel="true"
+            Action="executeWithParams">
+      <NamedData NDName="coupon" NDType="oracle.jbo.domain.Number" NDValue="${bindings.ExecuteWithParams_coupon}"/>
+    </action>
+    <attributeValues IterBinding="variables" id="coupon">
+      <AttrNames>
+        <Item Value="ExecuteWithParams_coupon"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOQmdmKhan1Iterator" id="IsPaid">
+      <AttrNames>
+        <Item Value="IsPaid"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOStat1Iterator" id="Selectobjects2">
+      <AttrNames>
+        <Item Value="Selectobjects2"/>
+      </AttrNames>
+    </attributeValues>
+    <tree IterBinding="VOStatUnitWise1Iterator" id="VOStatUnitWise1">
+      <nodeDefinition DefName="com.usaparel.qmdm.model.VO.VOStatUnitWise" Name="VOStatUnitWise10">
+        <AttrNames>
+          <Item Value="J10"/>
+          <Item Value="J1"/>
+          <Item Value="J2"/>
+          <Item Value="J3"/>
+          <Item Value="J4"/>
+          <Item Value="J5"/>
+          <Item Value="J6"/>
+          <Item Value="J8"/>
+          <Item Value="J7"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <attributeValues IterBinding="VOStat1Iterator" id="Given">
+      <AttrNames>
+        <Item Value="Given"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOUnitWiseTotalToken1Iterator" id="Us1Total">
+      <AttrNames>
+        <Item Value="Us1Total"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOUnitWiseTotalToken1Iterator" id="Us2Total">
+      <AttrNames>
+        <Item Value="Us2Total"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOUnitWiseTotalToken1Iterator" id="Us3Total">
+      <AttrNames>
+        <Item Value="Us3Total"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOUnitWiseTotalToken1Iterator" id="Us4Total">
+      <AttrNames>
+        <Item Value="Us4Total"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOUnitWiseTotalToken1Iterator" id="Us5Total">
+      <AttrNames>
+        <Item Value="Us5Total"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOUnitWiseTotalToken1Iterator" id="Us6Total">
+      <AttrNames>
+        <Item Value="Us6Total"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOUnitWiseTotalToken1Iterator" id="Us7Total">
+      <AttrNames>
+        <Item Value="Us7Total"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="VOUnitWiseTotalToken1Iterator" id="UsDenim">
+      <AttrNames>
+        <Item Value="UsDenim"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
+</pageDefinition>
