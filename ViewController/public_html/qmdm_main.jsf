@@ -94,11 +94,11 @@
                                     </af:gridRow>
                                     <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr2">
                                         <af:gridCell marginStart="5px" width="12%" id="gc8" halign="center">
-                                            <af:outputText value="2" id="ot13"
+                                            <af:outputText value="16" id="ot13"
                                                            inlineStyle="color:black; font-size:x-large; font-weight:bold;"/>
                                         </af:gridCell>
                                         <af:gridCell marginStart="5px" width="12%" id="gc9" halign="center">
-                                            <af:outputText value="2" id="ot135"
+                                            <af:outputText value="166" id="ot135"
                                                            inlineStyle="color:black; font-size:x-large; font-weight:bold;"/>
                                         </af:gridCell>
                                         <af:gridCell marginStart="5px" width="12%" id="gc10" halign="center">
