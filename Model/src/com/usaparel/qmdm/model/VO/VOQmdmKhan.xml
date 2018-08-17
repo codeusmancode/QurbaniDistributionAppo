@@ -20,17 +20,18 @@
     Name="VOQmdmKhan1"
     ViewObjectName="com.usaparel.qmdm.model.VO.VOQmdmKhan"
     RowLevelBinds="true"/>
-  <SQLQuery><![CDATA[SELECT QmdmKhan.EMPLOYEE_NAME,     
-       QmdmKhan.EMPLOYEE_ID,     
-       QmdmKhan.EMPLOYEE_DESIGNATION,     
-       QmdmKhan.IS_PAID,     
-       QmdmKhan.EMPLOYEE_DEPT,     
-       QmdmKhan.EMPLOYEE_UNIT,     
-       QmdmKhan.RFID_NUMBER,   
-       QmdmKhan.COUPON_NUMBER, 
-       (select count(*) from qmdm_khan) total,   
-       (select count(*) from qmdm_khan where is_paid = 1) given   
-FROM  QMDM_KHAN QmdmKhan    
+  <SQLQuery><![CDATA[SELECT QmdmKhan.EMPLOYEE_NAME,      
+       QmdmKhan.EMPLOYEE_ID,      
+       QmdmKhan.EMPLOYEE_DESIGNATION,      
+       QmdmKhan.IS_PAID,      
+       QmdmKhan.EMPLOYEE_DEPT,      
+       QmdmKhan.EMPLOYEE_UNIT,      
+       QmdmKhan.RFID_NUMBER,    
+       QmdmKhan.COUPON_NUMBER,  
+       QmdmKhan.VERSION_NUMBER, 
+       (select count(*) from qmdm_khan) total,    
+       (select count(*) from qmdm_khan where is_paid = 1) given    
+FROM  QMDM_KHAN QmdmKhan     
 WHERE QmdmKhan.COUPON_NUMBER = :coupon]]></SQLQuery>
   <EntityUsage
     Name="QmdmKhan"
@@ -80,14 +81,16 @@ WHERE QmdmKhan.COUPON_NUMBER = :coupon]]></SQLQuery>
     AliasName="RFID_NUMBER"/>
   <ViewAttribute
     Name="CouponNumber"
-    IsUpdateable="false"
-    IsPersistent="false"
     PrecisionRule="true"
-    Type="java.math.BigDecimal"
-    ColumnType="NUMBER"
-    AliasName="COUPON_NUMBER"
-    Expression="COUPON_NUMBER"
-    SQLType="NUMERIC"/>
+    EntityAttrName="CouponNumber"
+    EntityUsage="QmdmKhan"
+    AliasName="COUPON_NUMBER"/>
+  <ViewAttribute
+    Name="VersionNumber"
+    PrecisionRule="true"
+    EntityAttrName="VersionNumber"
+    EntityUsage="QmdmKhan"
+    AliasName="VERSION_NUMBER"/>
   <ViewAttribute
     Name="Total"
     IsUpdateable="false"

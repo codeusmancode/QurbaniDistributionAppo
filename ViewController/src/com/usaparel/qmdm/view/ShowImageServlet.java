@@ -26,7 +26,7 @@ public class ShowImageServlet extends HttpServlet {
         OutputStream out = response.getOutputStream();
         
         
-        File file = new File("D:\\Profile\\Desktop\\IMAGES\\"+emp_code+".png");
+        File file = new File("//home//oracle//Desktop//emp_pics//" + emp_code + ".jpg");
        
         if (file.exists()) {
             FileInputStream input = null;
@@ -50,7 +50,7 @@ public class ShowImageServlet extends HttpServlet {
                 
             }
         }else{
-            File noimage = new File("\\\\usgtms\\USG_EMP_PICS\\noimage.png");
+            File noimage = new File("//home//oracle//Desktop//emp_pics//" + "noimage" + ".jpg");
             FileInputStream input = null;
             try{
                 input = new FileInputStream(noimage);

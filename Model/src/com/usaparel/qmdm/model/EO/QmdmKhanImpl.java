@@ -25,7 +25,8 @@ public class QmdmKhanImpl extends EntityImpl {
         EmployeeDept,
         EmployeeUnit,
         RfidNumber,
-        CouponNumber;
+        CouponNumber,
+        VersionNumber;
         private static AttributesEnum[] vals = null;
         private static final int firstIndex = 0;
 
@@ -58,6 +59,7 @@ public class QmdmKhanImpl extends EntityImpl {
     public static final int EMPLOYEEUNIT = AttributesEnum.EmployeeUnit.index();
     public static final int RFIDNUMBER = AttributesEnum.RfidNumber.index();
     public static final int COUPONNUMBER = AttributesEnum.CouponNumber.index();
+    public static final int VERSIONNUMBER = AttributesEnum.VersionNumber.index();
 
     /**
      * This is the default constructor (do not remove).
@@ -202,12 +204,28 @@ public class QmdmKhanImpl extends EntityImpl {
     }
 
     /**
-     * @param employeeId key constituent
+     * Gets the attribute value for VersionNumber, using the alias name VersionNumber.
+     * @return the value of VersionNumber
+     */
+    public BigDecimal getVersionNumber() {
+        return (BigDecimal) getAttributeInternal(VERSIONNUMBER);
+    }
+
+    /**
+     * Sets <code>value</code> as the attribute value for VersionNumber.
+     * @param value value to set the VersionNumber
+     */
+    public void setVersionNumber(BigDecimal value) {
+        setAttributeInternal(VERSIONNUMBER, value);
+    }
+
+    /**
+     * @param couponNumber key constituent
 
      * @return a Key object based on given key constituents.
      */
-    public static Key createPrimaryKey(BigDecimal employeeId) {
-        return new Key(new Object[] { employeeId });
+    public static Key createPrimaryKey(BigDecimal couponNumber) {
+        return new Key(new Object[] { couponNumber });
     }
 
 

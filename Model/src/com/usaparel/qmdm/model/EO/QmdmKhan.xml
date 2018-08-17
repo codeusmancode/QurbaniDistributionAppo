@@ -29,13 +29,11 @@
   </Attribute>
   <Attribute
     Name="EmployeeId"
-    IsNotNull="true"
     ColumnName="EMPLOYEE_ID"
     SQLType="NUMERIC"
     Type="java.math.BigDecimal"
     ColumnType="NUMBER"
-    TableName="QMDM_KHAN"
-    PrimaryKey="true"/>
+    TableName="QMDM_KHAN"/>
   <Attribute
     Name="EmployeeDesignation"
     Precision="200"
@@ -92,6 +90,14 @@
     SQLType="NUMERIC"
     Type="java.math.BigDecimal"
     ColumnType="NUMBER"
+    TableName="QMDM_KHAN"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="VersionNumber"
+    ColumnName="VERSION_NUMBER"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
     TableName="QMDM_KHAN"/>
   <Key
     Name="SysC0024538"
@@ -100,7 +106,7 @@
       <Attr Name="_DBObjectName" Value="SYS_C0024538"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="com.usaparel.qmdm.model.EO.QmdmKhan.EmployeeId"/>
+      <Item Value="com.usaparel.qmdm.model.EO.QmdmKhan.CouponNumber"/>
     </AttrArray>
   </Key>
 </Entity>

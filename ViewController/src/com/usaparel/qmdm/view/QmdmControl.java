@@ -92,6 +92,7 @@ public class QmdmControl {
         
         BindingContainer bc = getBindings();
         AttributeBinding ab = (AttributeBinding) bc.get("coupon");
+        System.out.println(ab.getInputValue()+" <<<");
         int coupon = Integer.parseInt(valueChangeEvent.getNewValue().toString());
         ab.setInputValue(coupon);
         
@@ -228,7 +229,8 @@ public class QmdmControl {
             Row r =  vo.createRow();
             r.setAttribute("EmployeeName", getRitBulkLocation().getValue().toString());
             r.setAttribute("IsPaid", 1);
-            r.setAttribute("EmployeeId", id);
+            //r.setAttribute("EmployeeId", id);
+            r.setAttribute("CouponNumber", id);
             r.setAttribute("EmployeeUnit", 6);
             
         }

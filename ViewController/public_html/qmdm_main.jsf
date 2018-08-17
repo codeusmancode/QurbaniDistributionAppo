@@ -180,7 +180,7 @@
                                                                   pattern="#{bindings.VOStatUnitWise1.hints.J5.format}"/>
                                             </af:outputText>
                                         </af:column>
-                                        <af:column id="c9" headerText="Unit 7" align="center">
+                                        <af:column id="c9" headerText="Stylers/AFL" align="center">
                                             <af:outputText value="#{row.J7}"
                                                            shortDesc="#{bindings.VOStatUnitWise1.hints.J7.tooltip}"
                                                            id="ot23">
@@ -214,7 +214,7 @@
                                     <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr3">
                                         <af:gridCell marginStart="5px" width="20%" id="gc15">
                                             <af:panelFormLayout id="pfl2" maxColumns="1" rows="4">
-                                                <af:inputText value="#{bindings.coupon.inputValue}" label="Coupon#"
+                                                <af:inputText label="Coupon#"
                                                               required="#{bindings.coupon.hints.mandatory}"
                                                               columns="#{bindings.coupon.hints.displayWidth}"
                                                               maximumLength="#{bindings.coupon.hints.precision}"

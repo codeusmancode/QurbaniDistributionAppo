@@ -148,7 +148,7 @@
                                             </af:outputText>
                                         </af:column>
                                         <af:column headerText="US 1"
-                                                   id="c10" align="center" width="20%">
+                                                   id="c10" align="center" width="121" headerClass="stat_columns">
                                             <af:outputText value="#{row.Us1Total}"
                                                            shortDesc="#{bindings.VOUnitWiseTotalToken1.hints.Us1Total.tooltip}"
                                                            id="ot1" inlineStyle="font-size:40px;font-weight:bold">
@@ -158,7 +158,7 @@
                                         </af:column>
                                         <af:column headerText="US 2 "
                                                    id="c11" inlineStyle="font-size:50px;font-weight:bold"
-                                                   align="center" width="20%">
+                                                   align="center" width="121" headerClass="stat_columns">
                                             <af:outputText value="#{row.Us2Total}"
                                                            shortDesc="#{bindings.VOUnitWiseTotalToken1.hints.Us2Total.tooltip}"
                                                            id="ot2" inlineStyle="font-size:40px;font-weight:bold">
@@ -167,7 +167,7 @@
                                             </af:outputText>
                                         </af:column>
                                         <af:column headerText="US 3"
-                                                   id="c12" align="center" width="20%">
+                                                   id="c12" align="center" width="121" headerClass="stat_columns">
                                             <af:outputText value="#{row.Us3Total}"
                                                            shortDesc="#{bindings.VOUnitWiseTotalToken1.hints.Us3Total.tooltip}"
                                                            id="ot3" inlineStyle="font-size:40px;font-weight:bold">
@@ -176,7 +176,7 @@
                                             </af:outputText>
                                         </af:column>
                                         <af:column headerText="US 4"
-                                                   id="c13" align="center" width="20%">
+                                                   id="c13" align="center" width="121" headerClass="stat_columns">
                                             <af:outputText value="#{row.Us4Total}"
                                                            shortDesc="#{bindings.VOUnitWiseTotalToken1.hints.Us4Total.tooltip}"
                                                            id="ot4" inlineStyle="font-size:40px;font-weight:bold">
@@ -186,7 +186,7 @@
                                         </af:column>
                                         <af:column headerText="US 5"
                                                    id="c14" inlineStyle="font-size:50px;font-weight:bold"
-                                                   align="center" width="20%">
+                                                   align="center" width="121" headerClass="stat_columns">
                                             <af:outputText value="#{row.Us5Total}"
                                                            shortDesc="#{bindings.VOUnitWiseTotalToken1.hints.Us5Total.tooltip}"
                                                            id="ot5" inlineStyle="font-size:40px;font-weight:bold">
@@ -194,8 +194,8 @@
                                                                   pattern="#{bindings.VOUnitWiseTotalToken1.hints.Us5Total.format}"/>
                                             </af:outputText>
                                         </af:column>
-                                        <af:column headerText="US 7"
-                                                   id="c16" align="center" width="20%">
+                                        <af:column headerText="Stylers/AFL"
+                                                   id="c16" align="center" width="125" headerClass="stat_columns">
                                             <af:outputText value="#{row.Us7Total}"
                                                            shortDesc="#{bindings.VOUnitWiseTotalToken1.hints.Us7Total.tooltip}"
                                                            id="ot14" inlineStyle="font-size:40px;font-weight:bold">
@@ -204,7 +204,7 @@
                                             </af:outputText>
                                         </af:column>
                                         <af:column headerText="US Denim"
-                                                   id="c17" align="center" width="20%">
+                                                   id="c17" align="center" width="123" headerClass="stat_columns">
                                             <af:outputText value="#{row.UsDenim}"
                                                            shortDesc="#{bindings.VOUnitWiseTotalToken1.hints.UsDenim.tooltip}"
                                                            id="ot27" inlineStyle="font-size:40px;font-weight:bold">
@@ -213,7 +213,7 @@
                                             </af:outputText>
                                         </af:column>
                                         <af:column headerText="Bulk"
-                                                   id="c15" align="center" width="20%">
+                                                   id="c15" align="center" width="121" headerClass="stat_columns">
                                             <af:outputText value="#{row.Us6Total}"
                                                            shortDesc="#{bindings.VOUnitWiseTotalToken1.hints.Us6Total.tooltip}"
                                                            id="ot6" inlineStyle="font-size:40px;font-weight:bold">
